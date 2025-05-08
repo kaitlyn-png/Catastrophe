@@ -181,6 +181,7 @@ class Level3 extends Phaser.Scene {
 
                     playerBullet.destroy();
                     this.bullets.bullets.splice(j, 1);
+
                     vacuum.destroy();
                     this.vacuums.splice(i, 1);                 
 
@@ -196,6 +197,8 @@ class Level3 extends Phaser.Scene {
                     this.explosion.on(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
                         this.explosion.destroy();
                     }, this);
+
+                    break;
                 }
             }
         }
